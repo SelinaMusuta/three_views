@@ -5,4 +5,16 @@ from flask import render_template
 
 @app.route('/')
 def index():
-	return render_template('index.html')
+	title = "Home"
+	return render_template('index.html', title = title)
+
+
+@app.route('/locations.html')
+def locations():
+	title = "DuckWorld"
+	return render_template('locations.html', title = title)
+
+@app.route('/search.html')
+def search():
+	title = "Search"
+	return render_template('search.html', title = title)
