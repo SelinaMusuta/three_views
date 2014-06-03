@@ -9,12 +9,12 @@ def index():
 	return render_template('index.html', title = title)
 
 
-@app.route('/locations.html')
+@app.route('/locations')
 def locations():
 	title = "DuckWorld"
 	return render_template('locations.html', title = title)
 
-@app.route('/search.html')
+@app.route('/search')
 def search():
 	title = "Search"
 	return render_template('search.html', title = title)
